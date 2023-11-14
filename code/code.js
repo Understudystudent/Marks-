@@ -1,6 +1,6 @@
 
 document.getElementById('check').addEventListener('click', function() {
-    const x = parseInt(document.getElementById('marksInput').value);
+        let x = +document.getElementById('marksInput').value;
 
     switch (true) {
         case (x < 50):
@@ -9,7 +9,7 @@ document.getElementById('check').addEventListener('click', function() {
         case (x < 59):
             alert("Passed");
             break;
-        case (x < 69):
+        case (x < 69):     
             alert("C+");
             break;
         case (x < 79):
